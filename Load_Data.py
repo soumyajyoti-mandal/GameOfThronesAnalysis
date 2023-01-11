@@ -7,7 +7,7 @@ if os.path.exists(r"Dataset\battles.csv"):
     df = pd.read_csv(r"Dataset\battles.csv")
     #cleaning dataset
     df.dropna(subset=["attacker_king","attacker_outcome"],inplace=True)
-    REGION = 'ap-south-1'
+    REGION = 'region name'
     ACCESS_KEY_ID = 'access key'
     SECRET_ACCESS_KEY = 'secret access key'
     BUCKET_NAME = 'bucket name'

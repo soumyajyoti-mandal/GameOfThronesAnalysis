@@ -30,7 +30,7 @@ def lambda_handler(event, context):
     else:
         mycursor = mydb.cursor()
         try:
-            #load list data to mysql table
+            #load list data to mysql table which already exists in DB
             myquery = '''insert into mydatabase.got (name_of_battle , year_of_battle , battle_number,attacker_king , 
             defender_king, attacker_1, attacker_2,attacker_3 ,attacker_4 ,defender_1, 
             defender_2 , defender_3,defender_4, attacker_outcome, battle_type ,major_death ,
